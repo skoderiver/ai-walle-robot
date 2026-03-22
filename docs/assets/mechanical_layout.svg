@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#f5efe3"/>
+  <text x="60" y="70" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b" font-weight="700">瓦力风格机械模块布局示意</text>
+  <text x="60" y="105" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#6b5d52">这不是版权角色复刻图，而是用于 DIY 建模的工程模块拆分参考。</text>
+
+  <g transform="translate(430,120)">
+    <rect x="120" y="40" width="120" height="80" rx="20" fill="#d8b25c" stroke="#8b6d2f" stroke-width="4"/>
+    <circle cx="150" cy="80" r="22" fill="#4c5b59"/>
+    <circle cx="210" cy="80" r="22" fill="#4c5b59"/>
+    <rect x="105" y="130" width="150" height="55" rx="16" fill="#a78b57" stroke="#745d34" stroke-width="4"/>
+    <rect x="155" y="185" width="50" height="80" rx="14" fill="#8f7a58" stroke="#5d4e37" stroke-width="4"/>
+    <rect x="75" y="260" width="210" height="180" rx="18" fill="#b8934f" stroke="#7b6030" stroke-width="4"/>
+    <rect x="40" y="290" width="35" height="110" rx="14" fill="#8a785c" stroke="#5b4d3c" stroke-width="4"/>
+    <rect x="285" y="290" width="35" height="110" rx="14" fill="#8a785c" stroke="#5b4d3c" stroke-width="4"/>
+    <rect x="-10" y="420" width="105" height="130" rx="18" fill="#6f5f50" stroke="#4e4035" stroke-width="4"/>
+    <rect x="265" y="420" width="105" height="130" rx="18" fill="#6f5f50" stroke="#4e4035" stroke-width="4"/>
+    <rect x="30" y="445" width="25" height="80" rx="8" fill="#51463d"/>
+    <rect x="305" y="445" width="25" height="80" rx="8" fill="#51463d"/>
+  </g>
+
+  <line x1="620" y1="210" x2="930" y2="150" stroke="#6b5d52" stroke-width="3"/>
+  <text x="950" y="145" font-size="24" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b" font-weight="700">头部总成</text>
+  <text x="950" y="178" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b">轻量化外壳</text>
+  <text x="950" y="204" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b">眼睛屏幕 / 灯板</text>
+
+  <line x1="620" y1="300" x2="930" y2="270" stroke="#6b5d52" stroke-width="3"/>
+  <text x="950" y="265" font-size="24" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b" font-weight="700">脖颈云台</text>
+  <text x="950" y="298" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b">1 个 yaw + 1 个 pitch</text>
+  <text x="950" y="324" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b">预留走线通道</text>
+
+  <line x1="620" y1="410" x2="930" y2="390" stroke="#6b5d52" stroke-width="3"/>
+  <text x="950" y="385" font-size="24" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b" font-weight="700">躯干与电控仓</text>
+  <text x="950" y="418" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b">主板 / 音箱 / 灯效</text>
+  <text x="950" y="444" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b">检修口与模块化固定</text>
+
+  <line x1="505" y1="450" x2="220" y2="380" stroke="#6b5d52" stroke-width="3"/>
+  <text x="75" y="372" font-size="24" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b" font-weight="700">手臂组件</text>
+  <text x="75" y="405" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b">建议先做单轴摆动</text>
+  <text x="75" y="431" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b">留升级空间</text>
+
+  <line x1="510" y1="590" x2="920" y2="560" stroke="#6b5d52" stroke-width="3"/>
+  <text x="940" y="555" font-size="24" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b" font-weight="700">履带底盘</text>
+  <text x="940" y="588" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b">电机尽量靠下</text>
+  <text x="940" y="614" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b">张紧结构可调</text>
+  <text x="940" y="640" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#3d332b">电池居中放低</text>
+
+  <text x="60" y="700" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#6b5d52">建议先冻结 4 件事：整机高度、头部重量、脖颈行程、底盘内部安装空间。</text>
+</svg>
