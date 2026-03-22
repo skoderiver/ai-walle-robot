@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
   <rect width="1200" height="760" fill="#f7f3ea"/>
   <text x="60" y="70" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#2f3b36" font-weight="700">瓦力机器人总体架构示意</text>
-  <text x="60" y="105" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#5a635e">推荐路线：ESP32 负责实时控制，树莓派或 Jetson 负责交互、视觉、AI，Unity 负责数字孪生与调试。</text>
+  <text x="60" y="105" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#5a635e">推荐路线：ESP32 负责实时控制，Jetson 负责导航、视觉、语音与 AI，Unity 负责主力开发、仿真和状态可视化。</text>
 
   <rect x="70" y="150" rx="20" ry="20" width="250" height="140" fill="#dce8d5" stroke="#4e6b50" stroke-width="3"/>
-  <text x="100" y="195" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#243127" font-weight="700">Unity 控制台</text>
-  <text x="100" y="230" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#243127">数字孪生</text>
-  <text x="100" y="258" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#243127">遥控 UI / 动作编辑</text>
+  <text x="92" y="195" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#243127" font-weight="700">Unity 主开发台</text>
+  <text x="100" y="230" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#243127">仿真 / 状态可视化</text>
+  <text x="100" y="258" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#243127">任务调试 / 地图回放</text>
 
   <rect x="470" y="140" rx="24" ry="24" width="280" height="170" fill="#b7d7ea" stroke="#2e6f8f" stroke-width="3"/>
   <text x="515" y="190" font-size="30" font-family="Segoe UI, Arial, sans-serif" fill="#113246" font-weight="700">高层计算板</text>
@@ -54,5 +54,5 @@
   <line x1="750" y1="520" x2="840" y2="610" stroke="#9b6a18" stroke-width="4"/>
   <polygon points="840,610 818,603 825,625" fill="#9b6a18"/>
 
-  <text x="65" y="715" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#68645c">思路要点：先做可遥控、可展示的 V1，再加感知与 AI，不把实时控制压在高层 Linux 上。</text>
+  <text x="65" y="715" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#68645c">思路要点：先做可自主导航、可对话的 V1，再加多房间语义任务，不把实时控制压在高层 Linux 上。</text>
 </svg>
