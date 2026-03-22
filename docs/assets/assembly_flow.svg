@@ -1,55 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
-  <rect width="1200" height="760" fill="#f8f1eb"/>
-  <text x="60" y="70" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#3a3430" font-weight="700">从 0 到展陈样机的实施流程</text>
-  <text x="60" y="105" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#655b56">把项目切成几个可以单独验收的阶段，比一次性追求完整更稳。</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f8f1eb"/>
+  <text x="60" y="70" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#3a3430" font-weight="700">Unity-first 自主机器人实施流程</text>
+  <text x="60" y="106" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#655b56">先把仿真、任务模型和底盘能力拆开做，再进入机载自主导航与语音代理整合，会比直接冲整机稳定得多。</text>
 
-  <rect x="80" y="180" rx="18" ry="18" width="220" height="110" fill="#ead7b8" stroke="#8b6d3d" stroke-width="3"/>
-  <text x="130" y="225" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#5a4626" font-weight="700">阶段 1</text>
-  <text x="118" y="258" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5a4626">需求冻结与尺寸</text>
+  <rect x="70" y="170" rx="18" ry="18" width="250" height="110" fill="#ead7b8" stroke="#8b6d3d" stroke-width="3"/>
+  <text x="125" y="214" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#5a4626" font-weight="700">阶段 1</text>
+  <text x="100" y="248" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5a4626">Unity 仿真与任务模型</text>
 
-  <rect x="350" y="180" rx="18" ry="18" width="220" height="110" fill="#dbe7d4" stroke="#56734d" stroke-width="3"/>
-  <text x="400" y="225" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#354a30" font-weight="700">阶段 2</text>
-  <text x="400" y="258" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#354a30">底盘验证样机</text>
+  <rect x="365" y="170" rx="18" ry="18" width="250" height="110" fill="#dbe7d4" stroke="#56734d" stroke-width="3"/>
+  <text x="420" y="214" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#354a30" font-weight="700">阶段 2</text>
+  <text x="415" y="248" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#354a30">底盘与电控验证</text>
 
-  <rect x="620" y="180" rx="18" ry="18" width="220" height="110" fill="#d3e4ef" stroke="#4e7087" stroke-width="3"/>
-  <text x="670" y="225" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#334a5b" font-weight="700">阶段 3</text>
-  <text x="655" y="258" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#334a5b">头部与脖颈机构</text>
+  <rect x="660" y="170" rx="18" ry="18" width="250" height="110" fill="#d3e4ef" stroke="#4e7087" stroke-width="3"/>
+  <text x="715" y="214" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#334a5b" font-weight="700">阶段 3</text>
+  <text x="696" y="248" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#334a5b">Jetson + ROS2 导航</text>
 
-  <rect x="890" y="180" rx="18" ry="18" width="220" height="110" fill="#efd7d5" stroke="#93605c" stroke-width="3"/>
-  <text x="940" y="225" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#633c39" font-weight="700">阶段 4</text>
-  <text x="960" y="258" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#633c39">总装联调</text>
+  <rect x="955" y="170" rx="18" ry="18" width="180" height="110" fill="#efd7d5" stroke="#93605c" stroke-width="3"/>
+  <text x="1003" y="214" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#633c39" font-weight="700">阶段 4</text>
+  <text x="982" y="248" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#633c39">语音与 GPT 代理</text>
 
-  <rect x="215" y="430" rx="18" ry="18" width="220" height="110" fill="#dbe7d4" stroke="#56734d" stroke-width="3"/>
-  <text x="265" y="475" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#354a30" font-weight="700">阶段 5</text>
-  <text x="245" y="508" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#354a30">喷涂与外观细化</text>
+  <rect x="130" y="430" rx="18" ry="18" width="250" height="110" fill="#ead7b8" stroke="#8b6d3d" stroke-width="3"/>
+  <text x="185" y="474" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#5a4626" font-weight="700">阶段 5</text>
+  <text x="165" y="508" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5a4626">总装与安全联调</text>
 
-  <rect x="485" y="430" rx="18" ry="18" width="220" height="110" fill="#d3e4ef" stroke="#4e7087" stroke-width="3"/>
-  <text x="535" y="475" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#334a5b" font-weight="700">阶段 6</text>
-  <text x="505" y="508" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#334a5b">Unity 控制与脚本</text>
+  <rect x="425" y="430" rx="18" ry="18" width="250" height="110" fill="#dbe7d4" stroke="#56734d" stroke-width="3"/>
+  <text x="480" y="474" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#354a30" font-weight="700">阶段 6</text>
+  <text x="460" y="508" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#354a30">单层自主导航验收</text>
 
-  <rect x="755" y="430" rx="18" ry="18" width="220" height="110" fill="#efd7d5" stroke="#93605c" stroke-width="3"/>
-  <text x="805" y="475" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#633c39" font-weight="700">阶段 7</text>
-  <text x="785" y="508" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#633c39">视觉 / AI 升级</text>
+  <rect x="720" y="430" rx="18" ry="18" width="250" height="110" fill="#d3e4ef" stroke="#4e7087" stroke-width="3"/>
+  <text x="775" y="474" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#334a5b" font-weight="700">阶段 7</text>
+  <text x="748" y="508" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#334a5b">多房间语义任务</text>
 
-  <line x1="300" y1="235" x2="350" y2="235" stroke="#7a6c61" stroke-width="4"/>
-  <polygon points="350,235 328,224 328,246" fill="#7a6c61"/>
-  <line x1="570" y1="235" x2="620" y2="235" stroke="#7a6c61" stroke-width="4"/>
-  <polygon points="620,235 598,224 598,246" fill="#7a6c61"/>
-  <line x1="840" y1="235" x2="890" y2="235" stroke="#7a6c61" stroke-width="4"/>
-  <polygon points="890,235 868,224 868,246" fill="#7a6c61"/>
+  <rect x="425" y="610" rx="18" ry="18" width="250" height="110" fill="#efd7d5" stroke="#93605c" stroke-width="3"/>
+  <text x="480" y="654" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#633c39" font-weight="700">阶段 8</text>
+  <text x="470" y="688" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#633c39">跨楼层能力评估</text>
 
-  <line x1="1000" y1="290" x2="1000" y2="350" stroke="#7a6c61" stroke-width="4"/>
-  <line x1="1000" y1="350" x2="325" y2="350" stroke="#7a6c61" stroke-width="4"/>
-  <line x1="325" y1="350" x2="325" y2="430" stroke="#7a6c61" stroke-width="4"/>
-  <polygon points="325,430 314,408 336,408" fill="#7a6c61"/>
+  <line x1="320" y1="225" x2="365" y2="225" stroke="#7a6c61" stroke-width="4"/>
+  <polygon points="365,225 343,214 343,236" fill="#7a6c61"/>
+  <line x1="615" y1="225" x2="660" y2="225" stroke="#7a6c61" stroke-width="4"/>
+  <polygon points="660,225 638,214 638,236" fill="#7a6c61"/>
+  <line x1="910" y1="225" x2="955" y2="225" stroke="#7a6c61" stroke-width="4"/>
+  <polygon points="955,225 933,214 933,236" fill="#7a6c61"/>
 
-  <line x1="435" y1="485" x2="485" y2="485" stroke="#7a6c61" stroke-width="4"/>
-  <polygon points="485,485 463,474 463,496" fill="#7a6c61"/>
-  <line x1="705" y1="485" x2="755" y2="485" stroke="#7a6c61" stroke-width="4"/>
-  <polygon points="755,485 733,474 733,496" fill="#7a6c61"/>
+  <line x1="1045" y1="280" x2="1045" y2="340" stroke="#7a6c61" stroke-width="4"/>
+  <line x1="1045" y1="340" x2="255" y2="340" stroke="#7a6c61" stroke-width="4"/>
+  <line x1="255" y1="340" x2="255" y2="430" stroke="#7a6c61" stroke-width="4"/>
+  <polygon points="255,430 244,408 266,408" fill="#7a6c61"/>
 
-  <text x="70" y="645" font-size="22" font-family="Segoe UI, Arial, sans-serif" fill="#3a3430" font-weight="700">每个阶段的过关标准</text>
-  <text x="80" y="685" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#655b56">阶段 2：底盘能稳定直行与转向。</text>
-  <text x="380" y="685" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#655b56">阶段 3：头部 yaw / pitch 顺滑无抖动。</text>
-  <text x="710" y="685" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#655b56">阶段 6：Unity 已经能控制实体，不依赖 AI 也可演示。</text>
+  <line x1="380" y1="485" x2="425" y2="485" stroke="#7a6c61" stroke-width="4"/>
+  <polygon points="425,485 403,474 403,496" fill="#7a6c61"/>
+  <line x1="675" y1="485" x2="720" y2="485" stroke="#7a6c61" stroke-width="4"/>
+  <polygon points="720,485 698,474 698,496" fill="#7a6c61"/>
+  <line x1="845" y1="540" x2="845" y2="585" stroke="#7a6c61" stroke-width="4"/>
+  <line x1="845" y1="585" x2="550" y2="585" stroke="#7a6c61" stroke-width="4"/>
+  <line x1="550" y1="585" x2="550" y2="610" stroke="#7a6c61" stroke-width="4"/>
+  <polygon points="550,610 539,588 561,588" fill="#7a6c61"/>
+
+  <text x="60" y="765" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#655b56">过关标准：阶段 3 要能稳定建图和定位，阶段 4 要能让 GPT 只做任务代理，阶段 6 要能完成单层自主导航，阶段 8 再决定是否进入电梯或楼梯路线。</text>
 </svg>

@@ -1,58 +1,61 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
-  <rect width="1200" height="760" fill="#f7f3ea"/>
-  <text x="60" y="70" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#2f3b36" font-weight="700">瓦力机器人总体架构示意</text>
-  <text x="60" y="105" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#5a635e">推荐路线：ESP32 负责实时控制，Jetson 负责导航、视觉、语音与 AI，Unity 负责主力开发、仿真和状态可视化。</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820">
+  <rect width="1200" height="820" fill="#f7f3ea"/>
+  <text x="60" y="70" font-size="34" font-family="Segoe UI, Arial, sans-serif" fill="#2f3b36" font-weight="700">Unity-first 自主瓦力机器人总体架构</text>
+  <text x="60" y="106" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#5a635e">Unity 负责主力开发、仿真和状态可视化；Jetson 负责机载导航与感知；Docker 代理负责 GPT/API 调用；ESP32 负责底层实时控制。</text>
 
-  <rect x="70" y="150" rx="20" ry="20" width="250" height="140" fill="#dce8d5" stroke="#4e6b50" stroke-width="3"/>
-  <text x="92" y="195" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#243127" font-weight="700">Unity 主开发台</text>
-  <text x="100" y="230" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#243127">仿真 / 状态可视化</text>
-  <text x="100" y="258" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#243127">任务调试 / 地图回放</text>
+  <rect x="60" y="160" rx="22" ry="22" width="290" height="160" fill="#dce8d5" stroke="#4e6b50" stroke-width="3"/>
+  <text x="98" y="206" font-size="30" font-family="Segoe UI, Arial, sans-serif" fill="#243127" font-weight="700">Unity 主开发台</text>
+  <text x="95" y="244" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#243127">场景仿真 / 任务调试</text>
+  <text x="95" y="272" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#243127">状态可视化 / 地图回放</text>
+  <text x="95" y="300" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#243127">协议验证 / 日志分析</text>
 
-  <rect x="470" y="140" rx="24" ry="24" width="280" height="170" fill="#b7d7ea" stroke="#2e6f8f" stroke-width="3"/>
-  <text x="515" y="190" font-size="30" font-family="Segoe UI, Arial, sans-serif" fill="#113246" font-weight="700">高层计算板</text>
-  <text x="515" y="228" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#113246">树莓派 5 / Jetson</text>
-  <text x="515" y="256" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#113246">视觉 / 语音 / 状态机</text>
-  <text x="515" y="284" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#113246">ROS2 / WebSocket / Python</text>
+  <rect x="450" y="130" rx="24" ry="24" width="320" height="210" fill="#b7d7ea" stroke="#2e6f8f" stroke-width="3"/>
+  <text x="522" y="176" font-size="30" font-family="Segoe UI, Arial, sans-serif" fill="#113246" font-weight="700">Jetson 机载运行层</text>
+  <text x="500" y="214" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#113246">ROS2 / Nav2 / SLAM</text>
+  <text x="500" y="242" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#113246">视觉 / 语音管线 / 状态机</text>
+  <text x="500" y="270" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#113246">工具服务 / 任务执行</text>
+  <text x="500" y="298" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#113246">与 ESP32 串口或 CAN 通讯</text>
 
-  <rect x="470" y="380" rx="24" ry="24" width="280" height="170" fill="#f4d29b" stroke="#9b6a18" stroke-width="3"/>
-  <text x="545" y="430" font-size="30" font-family="Segoe UI, Arial, sans-serif" fill="#5c3b09" font-weight="700">底层 MCU</text>
-  <text x="555" y="468" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5c3b09">ESP32 / STM32</text>
-  <text x="525" y="496" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5c3b09">电机 / 舵机 / 传感器</text>
-  <text x="560" y="524" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5c3b09">急停 / 保护逻辑</text>
+  <rect x="450" y="410" rx="24" ry="24" width="320" height="180" fill="#f4d29b" stroke="#9b6a18" stroke-width="3"/>
+  <text x="548" y="456" font-size="30" font-family="Segoe UI, Arial, sans-serif" fill="#5c3b09" font-weight="700">ESP32 实时层</text>
+  <text x="500" y="494" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5c3b09">电机 / 舵机 / 编码器</text>
+  <text x="500" y="522" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5c3b09">急停 / 欠压 / 限位保护</text>
+  <text x="500" y="550" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5c3b09">毫秒级闭环控制</text>
 
-  <rect x="860" y="100" rx="20" ry="20" width="250" height="110" fill="#edd6c1" stroke="#8b5c3c" stroke-width="3"/>
-  <text x="910" y="145" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#5a3a24" font-weight="700">摄像头</text>
-  <text x="905" y="180" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5a3a24">USB / CSI</text>
+  <rect x="845" y="95" rx="20" ry="20" width="295" height="145" fill="#ead6f3" stroke="#78539a" stroke-width="3"/>
+  <text x="892" y="142" font-size="30" font-family="Segoe UI, Arial, sans-serif" fill="#4c3468" font-weight="700">Docker 代理服务</text>
+  <text x="880" y="178" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#4c3468">robot-agent / robot-voice</text>
+  <text x="880" y="206" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#4c3468">robot-memory / robot-gateway</text>
 
-  <rect x="860" y="245" rx="20" ry="20" width="250" height="110" fill="#edd6c1" stroke="#8b5c3c" stroke-width="3"/>
-  <text x="905" y="290" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#5a3a24" font-weight="700">麦克风</text>
-  <text x="895" y="325" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5a3a24">语音与唤醒词</text>
+  <rect x="845" y="275" rx="20" ry="20" width="295" height="120" fill="#edd6c1" stroke="#8b5c3c" stroke-width="3"/>
+  <text x="922" y="320" font-size="30" font-family="Segoe UI, Arial, sans-serif" fill="#5a3a24" font-weight="700">大模型与 API</text>
+  <text x="900" y="356" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5a3a24">OpenAI / 语音 / 外部服务</text>
 
-  <rect x="840" y="410" rx="20" ry="20" width="290" height="110" fill="#f0e4a6" stroke="#967d19" stroke-width="3"/>
-  <text x="895" y="455" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#5e4d08" font-weight="700">履带驱动</text>
-  <text x="885" y="490" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5e4d08">双减速电机 + 驱动器</text>
+  <rect x="845" y="445" rx="20" ry="20" width="295" height="150" fill="#f0e4a6" stroke="#967d19" stroke-width="3"/>
+  <text x="922" y="492" font-size="30" font-family="Segoe UI, Arial, sans-serif" fill="#5e4d08" font-weight="700">传感与执行</text>
+  <text x="890" y="528" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5e4d08">激光雷达 / 摄像头 / 麦克风</text>
+  <text x="890" y="556" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5e4d08">履带底盘 / 头部 / 手臂 / 喇叭</text>
 
-  <rect x="840" y="555" rx="20" ry="20" width="290" height="110" fill="#f0e4a6" stroke="#967d19" stroke-width="3"/>
-  <text x="895" y="600" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#5e4d08" font-weight="700">姿态执行</text>
-  <text x="885" y="635" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#5e4d08">头部 / 手臂数字舵机</text>
+  <line x1="350" y1="240" x2="450" y2="240" stroke="#4e6b50" stroke-width="5"/>
+  <polygon points="450,240 428,228 428,252" fill="#4e6b50"/>
+  <text x="360" y="224" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#4e6b50">WebSocket / ROS-TCP / RPC</text>
 
-  <line x1="320" y1="220" x2="470" y2="220" stroke="#4e6b50" stroke-width="5"/>
-  <polygon points="470,220 448,208 448,232" fill="#4e6b50"/>
-  <text x="350" y="205" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#4e6b50">TCP / WebSocket / ROS-TCP</text>
+  <line x1="610" y1="340" x2="610" y2="410" stroke="#2e6f8f" stroke-width="5"/>
+  <polygon points="610,410 598,388 622,388" fill="#2e6f8f"/>
+  <text x="638" y="382" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#2e6f8f">UART / USB Serial / CAN</text>
 
-  <line x1="610" y1="310" x2="610" y2="380" stroke="#2e6f8f" stroke-width="5"/>
-  <polygon points="610,380 598,358 622,358" fill="#2e6f8f"/>
-  <text x="635" y="353" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#2e6f8f">UART / USB Serial</text>
+  <line x1="770" y1="210" x2="845" y2="170" stroke="#78539a" stroke-width="4"/>
+  <polygon points="845,170 822,166 830,188" fill="#78539a"/>
+  <line x1="992" y1="240" x2="992" y2="275" stroke="#8b5c3c" stroke-width="4"/>
+  <polygon points="992,275 982,253 1002,253" fill="#8b5c3c"/>
 
-  <line x1="750" y1="195" x2="860" y2="155" stroke="#2e6f8f" stroke-width="4"/>
-  <polygon points="860,155 837,150 845,172" fill="#2e6f8f"/>
-  <line x1="750" y1="235" x2="860" y2="300" stroke="#2e6f8f" stroke-width="4"/>
-  <polygon points="860,300 837,295 845,317" fill="#2e6f8f"/>
+  <line x1="770" y1="525" x2="845" y2="520" stroke="#9b6a18" stroke-width="4"/>
+  <polygon points="845,520 823,510 824,532" fill="#9b6a18"/>
+  <line x1="770" y1="260" x2="845" y2="500" stroke="#2e6f8f" stroke-width="4" stroke-dasharray="10,8"/>
+  <polygon points="845,500 825,488 822,510" fill="#2e6f8f"/>
 
-  <line x1="750" y1="465" x2="840" y2="465" stroke="#9b6a18" stroke-width="4"/>
-  <polygon points="840,465 818,453 818,477" fill="#9b6a18"/>
-  <line x1="750" y1="520" x2="840" y2="610" stroke="#9b6a18" stroke-width="4"/>
-  <polygon points="840,610 818,603 825,625" fill="#9b6a18"/>
-
-  <text x="65" y="715" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#68645c">思路要点：先做可自主导航、可对话的 V1，再加多房间语义任务，不把实时控制压在高层 Linux 上。</text>
+  <text x="60" y="690" font-size="22" font-family="Segoe UI, Arial, sans-serif" fill="#2f3b36" font-weight="700">分工原则</text>
+  <text x="70" y="726" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#5a635e">1. Unity 不直接发电机控制量，而是用于开发、仿真、状态观察和任务调试。</text>
+  <text x="70" y="754" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#5a635e">2. Jetson 负责导航、感知和任务执行，Docker 代理负责 GPT/API 对接和工具调用。</text>
+  <text x="70" y="782" font-size="18" font-family="Segoe UI, Arial, sans-serif" fill="#5a635e">3. ESP32 只管底层实时控制与安全保护，不把实时闭环压给高层或大模型。</text>
 </svg>
